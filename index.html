@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Kanit&family=Oswald&family=Raleway&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="up_button">
+        <img width="100px" src="img/arrow-up-circle-svgrepo-com (1).svg" alt="">
+    </div>
+    <div class="cookies">
+        <img src="img/cookies.png" alt="">
+        <div class="cookies_info">
+            <h1>We use cookies!</h1>
+            <p>HTTP cookies are essential to the modern Internet but a vulnerability to your privacy. As a necessary part of web browsing, HTTP cookies help web developers give you more personal, convenient website visits. Cookies let websites remember you, your website logins, shopping carts and more. But they can also be a treasure trove of private info for criminals to spy on.</p>
+            <button onclick="closeCookies()" >Allow</button>
+        </div>
+    </div>
+    <div class="settings">
+        <img onclick="close_window()" class="close_window" width="60px" src="img/cross.svg" alt="">
+        <!-- <h1>Settings</h1> -->
+        <div class="pesonalization">
+            <h2>Personalization</h2> 
+            <label for="">Choose your font</label><br>
+            <input id="font" list="fonts"><br>
+            <label for="">Choose your font size</label><br>
+            <input id="font_size" list="fonts_size"><br>
+            <datalist id="fonts">
+                <option value="oswald">Oswald</option>
+                <option value="roboto">Roboto Mono</option>
+                <option value="raleway">Raleway</option>
+                <option value="kanit">Kanit</option>
+                <option value="flow">Flow Circular</option>
+
+            </datalist>
+            <datalist id="fonts_size">
+                <option value="14"></option>
+                <option value="16"></option>
+                <option value="18"></option>
+                <option value="20"></option>
+                <option value="22"></option>
+
+            </datalist>
+            <label for="">Choose font color</label><br>
+            <input id="font_color" type="color" > 
+            <input type="button" value="Save" onclick="change_pers()" >           
+        </div>
+    </div>
+    
+    <div class="container">
+        
+        <div class="welcome_line">
+            <p>welcome to my portfolio</p>
+        </div>
+        <header>
+            <nav>
+                <h1>Oleksandr.B</h1>
+                <div id="nav" class="nav_links">
+                    
+                    <a href="about_me.html">About me</a>
+                    <a onclick="getFuture()" href="#">Get a wish</a>
+                    <a href="clicker.html">Clicker</a>
+                    <a href="#" onclick="sett()" >Settings</a>
+                </div>
+                <img id="burgerMenu" onclick="burger_menu()" class="burger_menu" src="img/menu.svg" alt="">
+            </nav>
+            <div class="banner">
+                <img width="100%" height="100%" src="img/banner.jpg" alt="">
+                <div class="banner_info">
+                    <h1>I'm Oleksandr Bulbuk.
+                        A Frontend Web-Developer
+                        based in Ukraine.</h1>
+                    
+                    <p></p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="work_exp" class="work_experience reveal-animation">
+                <p class="subtitle">WORK EXPERIENCE</p>
+                <h1>Companies I have worked for in the past.</h1>
+                <div class="work__blocks">
+                    <div class="work_experience_block reveal-animation">
+                        <h1>01</h1>
+                        <h3><span style="color:#3CC74E;">College IFNMU</span>, Web-Developer</h3>
+                        <p>As a web developer at College IFNMU, I collaborated with a team to create and develop a website for students
+                            using HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <div class="work_experience_block reveal-animation">
+                        <h1>02</h1>
+                        <h3><span style="color:#609BFF;">Clover</span>,  Web-Developer</h3>
+                        <p>In my role as a web developer at Clover, I created website for tour company.</p>
+                    </div>
+                    <div class="work_experience_block reveal-animation">
+                        <h1>03</h1>
+                        <h3><span style="color:#E95D90;">UpWork</span>,  Web-Developer</h3>
+                        <p>As a freelance web developer on Upwork, I've crafted captivating websites, designed intuitive user interfaces, and delivered seamless digital experiences to clients worldwide.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="personal_details">
+                <div class="personal__info reveal-animation">
+                    <h1>Personal Deteils</h1>
+                    <p>Hello, my name is Sasha and I am a 16-year-old web developer from Ukraine. I have been learning programming since I was 12 years old. Currently, I am studying at a Ukrainian school as well as a programming school. I have also worked for some Ukrainian companies such as Medical College IFNMU and Clover company.</p>
+                    <a href="about_me.html">More about me</a>
+                </div>
+                <img width="100%" src="img/pholosophie.jpg" alt="">
+            </div>
+            <div id="skills" class="skills">
+                <div class="skills_title reveal-animation">
+                    <h1>Soft Skills</h1>
+                    <p>Soft skills are an important part of work because you will work in a team, speak with people and etc. Here are some of my soft skills.</p>
+                </div>
+                
+                <div class="skills_block reveal-animation">
+                    <img width="40px" src="img/team_work.png" alt="">
+                    <h2>Teamwork</h2>
+                    <p>Working at College IFNMU has taught me a lot about how to work in team.</p>
+                </div>
+                <div class="skills_block reveal-animation">
+                    <img width="40px" src="img/time_manag.png" alt="">
+                    <h2>Time management</h2>
+                    <p>My experience at Clover has helped me learn how to manage my time.</p>
+                </div>
+                <div class="skills_block reveal-animation">
+                    <img width="40px" src="img/perfect_details.png" alt="">
+                    <h2>Attention to detail</h2>
+                    <p>s a web developer, I have honed my attention to detail by ensuring every element on a website meets the desired specifications. I have developed a keen eye for mistakes and a commitment to delivering high-quality work.</p>
+                </div>
+                <div class="skills_block reveal-animation">
+                    <img width="40px" src="img/problem_solving.png" alt="">
+                    <h2>Problem-solving</h2>
+                    <p>My programming journey began with free online lessons, but it was not without challenges. Along the way, I faced numerous problems that I had to overcome through persistence and hard work.</p>
+                </div>
+            </div>
+            <!--<div class="technology">
+                <div class="technology_blok">HTML</div>
+                <div class="technology_blok">SCSS</div>
+                <div class="technology_blok">JS</div>
+                <div class="technology_blok">Bootstrap</div>
+                <div class="technology_blok">JS React</div>
+                <div class="technology_blok">CSS</div>
+            </div>
+            <div class="my_projects">
+                <p></p>
+                <h1></h1>
+                <div class="my_project_block"></div>
+                <a href="">More</a>
+            </div>-->
+            <div class="instagram">
+                <div class="instagram_info reveal-animation">
+                    <h1>My instagram</h1>
+                    <p>
+                        If you want to see more of my work, learn about the website creation process, and simply find out more about me, I recommend visiting my portfolio.</p>
+                    <a href="https://instagram.com/sasha_blbk?igshid=OGQ5ZDc2ODk2ZA==">Follow me on IG</a>
+                </div>
+                <img width="100%" src="img/planes_view.jpg" alt="">
+                
+            </div>
+            <div class="my_projects">
+                <h1 class="projects_title" >My projects</h1>
+                <ul class="my_projects_list">
+                    <li>
+                        <img width="100%" src="http://collegeifnmu.co.uk/img/logo.jpg" alt="">
+                        <a href="http://collegeifnmu.co.uk/"><h1>College IFNMU</h1></a>
+                        <p>Website for students of Ivano-Frankiwsk nationl mediacal university where they can learn something new online.</p>
+                    </li>
+                    <li>
+                        <img width="100%" src="http://collegeifnmu.co.uk/StudentGit/img/logo%20(3).png" alt="">
+                        <a href="http://collegeifnmu.co.uk/StudentGit/index.html"><h1>Student Git</h1></a>
+                        <p>Website for students of Ivano-Frankiwsk nationl mediacal university where they can learn something new about timetables, student cafes, corpuses etc.</p>
+                    </li>
+                    
+                    <li>
+                        <img width="100%" src="https://bulbuk.github.io/Seedra/img/product6.png" alt="">
+                        <a href="https://bulbuk.github.io/Seedra/"><h1>Seedra</h1></a>
+                        <p>Website for online shop of meal.</p>
+                    </li>
+                    <li>
+                        <img width="100%" src="https://bulbuk.github.io/EilfTours/img/banner.jpg" alt="">
+                        <a href="https://bulbuk.github.io/EilfTours/"><h1>Eilf Tours</h1></a>
+                        <p>Website for tour company with settings.</p>
+                    </li>
+                    <li>
+                        <img width="100%" src="https://bulbuk.github.io/summer/img/banner.jpg" alt="">
+                        <a href="https://bulbuk.github.io/summer/"><h1>My summer</h1></a>
+                        <p>Website about my summer 2022.</p>
+                    </li>
+                    <li>
+                        <img width="100%" src="https://bulbuk.github.io/Ukraine/img/gallery2%201.png" alt="">
+                        <a href="https://bulbuk.github.io/Ukraine/"><h1>Ukraine</h1></a>
+                        <p>Website about Ukraine.</p>
+                    </li>
+                    <li>
+                        <img width="100%" src="https://bulbuk.github.io/apple/img/photo-1614312385003-dcea7b8b6ab6.jpg" alt="">
+                        <a href="https://bulbuk.github.io/apple/"><h1>Apple</h1></a>
+                        <p>Website about Apple.</p>
+                    </li>
+                    <li>
+                        <img width="100%" src="https://bulbuk.github.io/ecologie/img/elon.png" alt="">
+                        <a href="https://bulbuk.github.io/ecologie/"><h1>Ecologie</h1></a>
+                        <p>Website about ecologie.</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="parralax_backstage">
+                <img width="100%" src="img/backstage.jpg" alt="">
+            </div>
+            <div class="working_backstage">
+                <h1>Work backstage</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita possimus, velit impedit at cupiditate?</p>
+                <div class="viewer"></div>
+            </div> -->
+            <div id="contact" class="talk_form">
+                <div class="talk_form_info reveal-animation">
+                    <h1>Let’s talk business</h1>
+                    <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
+                </div>
+                <form onsubmit="sendEmeil()"; reset(); return false >
+                    <label for="">Name</label>
+                    <input class="reveal-animation" type="text">
+                    <label for="">Email Address</label>
+                    <input id="Email" class="reveal-animation" type="text">
+                    <label for="">Message</label>
+                    <textarea class="reveal-animation" name="" id="" cols="30" rows="10"></textarea>
+                    <button>LET'S GET STARTED</button>
+                </form>
+            </div>
+        </main>
+        <footer class="reveal-animation">
+            <div class="footer_info">
+                <div class="footer_logo">
+                    <h1>Oleksandr.B</h1>
+                    <div class="social_media">
+                        <a href="https://instagram.com/sasha_blbk?igshid=OGQ5ZDc2ODk2ZA==">
+                            <img width="20px" src="img/free-icon-instagram-3955024.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img width="20px" src="img/free-icon-linkedin-145807.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img width="20px" src="img/free-icon-twitter-3670151.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright_info">
+                    <p>Copyright 2020 • Oleksandr Bulbuk</p>
+                    <span>Created by Oleksandr Bulbuk</span>
+                </div>
+            </div>
+            <div class="footer_nav">
+                <a href="index.html">Home</a>
+                <a href="about_me.html">About</a>
+                <a href="clicker.html">Clicker</a>
+                <a href="#work_exp">Work Experience</a>
+                <a href="#skills">My Skills</a>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/mmain.js" ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
